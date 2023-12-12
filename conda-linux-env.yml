@@ -1,0 +1,28 @@
+name: 2022-jax-maml
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.9
+  - cudatoolkit=11.3
+  - cudnn
+  - ipython
+  - jupyter
+  - jupyterlab
+  - jupyterlab_widgets
+  - matplotlib
+  - numpy
+  - pandas
+  - pandocfilters
+  - pip
+  - pytorch=1.11
+  - scipy
+  - seaborn
+  - torchaudio
+  - torchvision
+  - tqdm
+  - pip:
+    - --find-links https://storage.googleapis.com/jax-releases/jax_releases.html
+    - jax[cuda11_cudnn82]
+    - optax==0.1.2
+    - flax==0.4.1
